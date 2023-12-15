@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.AdminMapper">
+
+	<resultMap type="com.smhrd.entity.Tbl_User" id="user">
+
+		<result column="user_email" property="userEmail" />
+		<result column="user_name" property="userName" />
+		<result column="joined_at" property="joinedAt" />
+		<result column="approved_at" property="approvedAt" />
+		<result column="user_role" property="userRole" />
+
+	</resultMap>
+
+
+	<select id="search" resultMap="user">
+
+		select * from Tbl_user
+		where user_role = #{userRole}
+	</select>
+
+
+
+
+	<select id="login" parameterType="com.smhrd.entity.Tbl_Admin"
+		resultType="com.smhrd.entity.Tbl_Admin">
+		select * from Tbl_Admin where admin_id = #{admin_id} AND
+		admin_pw = #{admin_pw}
+	</select>
+
+	<update id="changePw" parameterType="com.smhrd.entity.Tbl_Admin">
+		update Tbl_Admin set
+		admin_pw = #{admin_pw} where admin_email = #{admin_email}
+
+	</update>
+
+	<select id="Q_detail" resultType="com.smhrd.entity.QuestionInfo">
+		SELECT *
+		FROM QNA
+		WHERE req_idx =
+		#{req_idx}
+	</select>
+
+	<update id="accountChange"
+		parameterType="com.smhrd.entity.Tbl_User">
+		update Tbl_User set
+		user_name = #{userName}, user_phone =
+		#{userPhone},user_role=#{userRole},approved_at=#{approvedAt} where
+		user_email = #{userEmail}
+
+	</update>
+
+	<select id="high_rating"
+		resultType="com.smhrd.entity.Rating_View">
+
+		select * from high_rating where rownum <![CDATA[<=]]>3
+
+	</select>
+	<!-- 일반사용자의 qna 목록 조회 하는 쿼리 -->
+	<select id="qnaNull" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT * FROM QNA WHERE user_email = #{user_email} and
+		ans_idx is null order by created_at desc
+	</select>
+
+	<select id="qnaNotNull" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT * FROM QNA WHERE user_email = #{user_email} and
+		ans_idx is not null order by created_at desc
+	</select>
+
+
+	<!-- 의대생사용자의 qna 목록 조회 하는 쿼리 -->
+	<select id="MedicQnaNull" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT * FROM QNA WHERE
+		ans_idx is null order by created_at desc
+	</select>
+
+	<select id="MedocQnaNotNull" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT * FROM QNA WHERE ans_user_email = #{user_email}
+		and
+		ans_idx is not null order by created_at desc
+	</select>
+
+	<select id="UserQnaNotNull" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT * FROM QNA WHERE user_email = #{user_email}
+		and
+		ans_idx is not null order by created_at desc
+	</select>
+
+
+
+
+	<insert id="req_insert"
+		parameterType="com.smhrd.entity.Tbl_Request">
+		INSERT INTO TBL_REQUEST(USER_EMAIL, REQ_TITLE,
+		REQ_CONTENT, REQ_IMG,
+		CREATED_AT, REQ_USER_NICK)
+		VALUES (
+		#{userEmail},
+		#{reqTitle},
+		#{reqContent},
+		#{reqImg},
+		SYSDATE,
+		#{reqUserNick}
+		)
+	</insert>
+
+	<insert id="deep_insert"
+		parameterType="com.smhrd.entity.Tbl_Deep">
+		INSERT INTO TBL_DEEP(REQ_IDX, DEEP_IMG, DEEP_RESULT,
+		USER_EMAIL)
+		VALUES (
+		(SELECT req_idx
+		FROM (
+		SELECT *
+		FROM tbl_request
+		WHERE
+		user_email = #{userEmail}
+		ORDER BY created_at DESC
+		)
+		WHERE ROWNUM = 1),
+		#{deepImg},
+		#{deepResult},
+		#{userEmail}
+		)
+	</insert>
+
+	<insert id="pay_insert"
+		parameterType="com.smhrd.entity.Tbl_Payment">
+		INSERT INTO TBL_PAYMENT(REQ_IDX, PAID_AMOUNT,
+		SHARE_AMOUNT, PAID_AT, USER_EMAIL)
+		VALUES (
+		(SELECT req_idx
+		FROM (
+		SELECT
+		*
+		FROM tbl_request
+		WHERE user_email = #{userEmail}
+		ORDER BY created_at
+		DESC
+		)
+		WHERE ROWNUM = 1),
+		#{paidAmount},
+		#{shareAmount},
+		SYSDATE,
+		#{userEmail}
+		)
+	</insert>
+
+	<!-- 사용자가 작성한 가장 최근 작성글 삭제 -->
+
+	<delete id="WriteDelete"
+		parameterType="com.smhrd.entity.Tbl_Request">
+		DELETE FROM tbl_request
+		WHERE req_idx = (
+		SELECT req_idx
+		FROM (
+		SELECT *
+		FROM tbl_request
+		WHERE user_email = #{user_email}
+		ORDER BY
+		created_at DESC
+		)
+		WHERE ROWNUM = 1
+		)
+
+	</delete>
+
+	<select id="qna_detail" resultType="com.smhrd.entity.QNA"
+		parameterType="string">
+		SELECT *
+		FROM QNA
+		WHERE user_email =
+		#{user_email} and
+		ans_idx is null
+	</select>
+
+	<select id="ratingSel" resultType="int"
+		parameterType="java.util.Map">
+		SELECT COUNT(*) FROM TBL_RATING WHERE ANS_IDX = #{ansIdx}
+	</select>
+
+
+	<update id="minusToken" parameterType="String">
+		UPDATE TBL_USER
+		SET
+		USER_TOKEN = USER_TOKEN - 1
+		WHERE USER_EMAIL = #{user_email}
+	</update>
+
+	<update id="answerPay" parameterType="String">
+		UPDATE TBL_PAYMENT
+		SET
+		ANS_USER_EMAIL = #{user_email}
+		WHERE REQ_IDX = #{req_idx}
+	</update>
+
+	<!-- 수입금 업데이트 -->
+	<update id="updateUserShare" parameterType="String">
+		UPDATE TBL_USER
+		SET
+		USER_PROFIT = (SELECT SUM(SHARE_AMOUNT) FROM
+		TBL_PAYMENT WHERE
+		ANS_USER_EMAIL = #{user_email})
+		WHERE USER_EMAIL = #{user_email}
+	</update>
+
+</mapper>

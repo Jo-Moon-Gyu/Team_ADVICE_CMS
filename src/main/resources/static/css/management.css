@@ -1,0 +1,179 @@
+.management_email > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+}
+
+.management_email > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+.accountName > span{
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(50px);
+}
+
+.name_text {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(50px);
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.nickName > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(100px);
+}
+
+.nickName > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(100px);
+}
+
+.accountTel > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(150px);
+}
+
+.tel {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(150px);
+    border-radius: 5px;
+    height: 25px;
+}
+
+.account_sex > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(200px);
+}
+
+.account_sex > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(200px);
+}
+
+.birth > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(250px);
+}
+
+.birth > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(250px);
+}
+
+.mg_approval > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(300px);
+}
+
+.mgApproval {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(300px);
+}
+
+.mg_approval > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 11%;
+    transform: translateY(295px);
+}
+
+.classification > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(350px);
+}
+
+.memberCF {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(350px);
+    border-radius: 5px;
+    height: 25px;
+}
+
+.Revenue > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(400px);
+}
+
+.Revenue > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(400px);
+}
+
+.certificate_ac > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 40%;
+}
+
+.certification {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 40%;
+    transform: translateY(30px);
+    border: 1px solid #000;
+    width: 20%;
+    height: 85%;
+}
+
+.certification > img {
+    width: 100%;
+    height: 100%;
+}

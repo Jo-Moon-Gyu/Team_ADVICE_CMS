@@ -1,0 +1,333 @@
+.event_list {
+    position: absolute;
+    display: block;
+    margin-left: 300px;
+    transform: translateY(330px);
+    width: 83%;
+    line-height: 130%;
+}
+
+.completed .btn_disabled {
+    text-decoration: line-through;
+    color: #999; /* 선택 시 글자색을 회색으로 변경합니다. */
+}
+
+.completed .content {
+    text-decoration: line-through;
+    color: #999; /* 선택 시 글자색을 회색으로 변경합니다. */
+}
+
+.container_btn {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+}
+
+.btnGroup{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 20px;
+    width: auto;
+
+}
+
+.btn_delete {
+    background-color: #44546A;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 55px;
+}
+
+.btn_disabled {
+    position: absolute;
+    display: inline-block;
+    background-color: #44546A;
+    margin-left: 6.5em;
+    transform: translateY(-4px);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+}
+
+.btn_activate {
+    position: absolute;
+    display: inline-block;
+    margin-left: 6.5em;
+    transform: translateY(-4px);
+    border: 0;
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 30px;
+    width: 80px;
+}
+
+.content_rgs {
+    position: fixed;
+    display: flex;
+    transform: translateY(-36px);
+    right: 0%;
+}
+
+.content_regist {
+    background-color: #44546A;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 110px;
+}
+
+.btnCancle {
+    border: 0px;
+    border-radius: 5px;
+    height: 30px;
+    width: 55px;
+    background-color: #44546A;
+    color: #fff;
+}
+
+.regist_list, .contents_list, .management_list {
+    position: absolute;
+    display: block;
+    transform: translateY(330px);
+    width: 84%;
+    height: 450px;
+    margin-left: 300px;
+}
+
+.regist, .contentsList, .managementList {
+    position: relative;
+    display: block;
+    border: 1px solid #000;
+    background-color: #d3d3d3;
+    height: 450px;
+    width: 98%;
+}
+
+.regist_title > span, .contents_title > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+}
+
+.regist_title_text, .contents_title > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    width: 400px;
+}
+
+.regist_writer > span, .contents_writer > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(50px);
+}
+
+.regist_writer > p, .contents_writer > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(50px);
+    font-weight: 700;
+    color: #000;
+}
+
+.regist_content > span, .contents_content > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(100px);
+}
+
+#content_select {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    height: 30px;
+    width: 185px;
+    transform: translateY(100px);
+}
+
+.file > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(150px);
+}
+
+.file_contents > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(100px);
+}
+
+.file_contents > a {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(100px);
+}
+
+.download_img {
+    font-size: 24px;
+}
+
+.regist_file {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(150px);
+}
+
+.link > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(200px);
+}
+
+.post_written > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(100px);
+}
+
+.post_written > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(130px);
+}
+
+.post_author > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(150px);
+}
+
+.post_author > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(180px);
+}
+
+.btnSend {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 52%;
+    transform: translateY(380px);
+    border: 0;
+    border-radius: 5px;
+    background-color: #44546A;
+    color: #fff;
+}
+
+.comment > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(300px);
+}
+
+.comment > p, #comment_admin {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(330px);
+}
+
+.regist_link{
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 10%;
+    transform: translateY(205px);
+}
+
+.link > p {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 12%;
+    transform: translateY(200px);
+}
+
+.explanation > span {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(250px);
+}
+
+#regist_explan {
+    position: absolute;
+    display: block;
+    margin: 20px;
+    margin-left: 3%;
+    transform: translateY(280px);
+}
+
+.regist_regist {
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #44546A;
+    color: #fff;
+    height: 30px;
+    width: 55px;
+}
+
+.contents_regist {
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #44546A;
+    color: #fff;
+    height: 30px;
+    width: 70px;
+}
+
+.update2 {
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #44546A;
+    color: #fff;
+    border: 0;
+}

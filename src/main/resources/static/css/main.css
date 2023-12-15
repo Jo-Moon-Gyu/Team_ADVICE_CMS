@@ -1,0 +1,376 @@
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.inner__header {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #44546A;
+    background-color: #44546A;
+}
+
+.line {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: white;
+}
+
+/* id */
+.login__id {
+    position: relative;
+    text-align: center;
+    margin-right: 150px;
+    transform: translateY(60px);
+}
+
+.login__id > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.id {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 8px;
+    height: 20px;
+}
+
+/* pw */
+.login__pw {
+    position: relative;
+    text-align: center;
+    margin-right: 150px;
+    transform: translateY(90px);
+}
+
+.login__pw > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.pw {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 8px;
+    height: 20px;
+}
+
+/* login */
+.login {
+    text-align: center;
+    transform: translateY(120px);
+    margin-left: 20px;
+}
+
+.login .btn__login {
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #44546A;
+    border-radius: 14px;
+}
+
+/* 비밀번호 초기화 */
+.reset {
+    text-align: center;
+    transform: translateY(150px);
+    margin-left: 20px;
+}
+
+.reset > a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reset_pw {
+    border: 1px solid #44546A;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.reset_pd {
+    width: 400px;
+    height: 420px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+}
+
+.reset_pd > h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    display: inline-flex;
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.login_reset_id {
+    text-align: center;
+    margin-right: 40%;
+    transform: translateY(30px);
+}
+
+.login_reset_id > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.login_reset_id .id {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.reset_tel {
+    text-align: center;
+    margin-right: 40%;
+    transform: translateY(70px);
+}
+
+.reset_tel > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.reset_tel .tel {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.verify_pw {
+    text-align: right;
+    margin-right: 20%;
+}
+
+.verify {
+    display: inline-flex;
+    border: 1px solid #44546A;
+    background-color: #44546A;
+    color: #fff;
+    font-weight: 400;
+    transform: translateY(100px);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+body > header > div.reset_pw > div > hr {
+    transform: translateY(120px);
+    text-align: center;
+    height: 2px;
+    width: 65%;
+    background-color: #44546A;
+    border: 1px solid #44546A;
+    border-radius: 5px;
+}
+
+.Certification_Number {
+    text-align: center;
+    margin-right: 40%;
+    transform: translateY(140px);
+}
+
+.Certification_Number > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.Certification_Number .cn {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 10px;
+    height: 25px;
+    width: 45%;
+}
+
+.rs_pw {
+    text-align: center;
+    transform: translateY(190px);
+}
+
+.rs_pw .rs{
+    border-radius: 8px;
+    border: 1px solid #44546A;
+    background-color: #44546A;
+    color: #fff;
+
+}
+
+thead > tr > td, tbody > tr > td {
+    width: 20%;
+}
+
+/* 정보수정 페이지 제작*/
+.update_account {
+    border: 1px solid #44546A;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.account_update {
+    width: 400px;
+    height: 360px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+}
+
+.account_update > h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login_update {
+    text-align: center;
+    margin-right: 40%;
+    transform: translateY(30px);
+}
+
+.login_update > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.login_update > span {
+    position: absolute;
+    display: inline-flex;
+    height: 25px;
+    transform: translateY(5px);
+    width : 300px;
+}
+
+.change_pw {
+    text-align: center;
+    margin-right: 50%;
+    transform: translateY(40px);
+}
+
+.change_pw > p {
+    position: relative;
+    display: inline-flex;
+    margin-right: 28px;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.changePw {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.change_pw2 {
+    text-align: center;
+    margin-right: 60%;
+    transform: translateY(50px);
+}
+
+.change_pw2 > p {
+    position: relative;
+    display: inline-flex;
+    font-size: 16px;
+    transform: translateY(5px);
+}
+
+.changePw2 {
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #44546A;
+    border-radius: 10px;
+    height: 25px;
+    margin-left: 28px;
+}
+
+.change_update {
+    text-align: center;
+    transform: translateY(100px);
+}
+
+.change_submit{
+    border-radius: 8px;
+    border: 1px solid #44546A;
+    background-color: #44546A;
+    color: #fff;
+}
+
+#check {
+	color: red;
+	position: absolute;
+	display: flex;
+	bottom: 20%;
+	right: 22%;
+}
