@@ -30,10 +30,10 @@
     <td align="center"><b>Data-Modeling</b><br>데이터 수집<br>딥러닝 모델 개발, 배포</td>
   </tr>
   <tr>
+    <td align="center"><a href="https://github.com/Jo-Moon-Gyu" target='_blank'>github</a></td>
     <td align="center"><a href="" target='_blank'>github</a></td>
-    <td align="center"><a href="" target='_blank'>github</a></td>
-    <td align="center"><a href="" target='_blank'>github</a></td>
-    <td align="center"><a href="" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/applestore2" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/rsefaqtd" target='_blank'>github</a></td>
     <td align="center"><a href="" target='_blank'>github</a></td>
   </tr>
 </table>
