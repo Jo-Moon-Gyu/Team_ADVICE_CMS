@@ -1,4 +1,6 @@
 # ADVICE(Web) 
+<a href="https://github.com/Jo-Moon-Gyu/Team_ADVICE_Project" target='_blank'>App Link 바로가기</a>
+
 스마트 인재 개발원 - 인공지능 융합 서비스 개발자 과정 <br>
 - 실전 프로젝트 <br>
 - 주제 : 딥러닝 기술을 활용한 피부 상처 조언 플랫폼 <br>
@@ -129,6 +131,7 @@
 
 - ### 사용자 계정관리 페이지<br>
 ![image](https://github.com/Jo-Moon-Gyu/Team_ADVICE_CMS/assets/143462444/91178791-7f2f-4178-81cd-e2b588ef34a0)
-![image](https://github.com/Jo-Moon-Gyu/Team_ADVICE_CMS/assets/143462444/6b27f7b4-2216-4859-9410-12687ae2756d)
+![image](https://github.com/Jo-Moon-Gyu/Team_ADVICE_CMS/assets/143462444/210ffe35-49d3-464f-b1d6-aa2d8663c88f)
+
 
 
