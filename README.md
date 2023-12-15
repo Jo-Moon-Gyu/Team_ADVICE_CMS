@@ -1,4 +1,4 @@
-# ADVICE(Web)
+# ADVICE(Web) 
 스마트 인재 개발원 - 인공지능 융합 서비스 개발자 과정 <br>
 - 실전 프로젝트 <br>
 - 주제 : 딥러닝 기술을 활용한 피부 상처 조언 플랫폼 <br>
@@ -31,10 +31,10 @@
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Jo-Moon-Gyu" target='_blank'>github</a></td>
-    <td align="center"><a href="" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/Nam-Hyun-Woong" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/applestore2" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/rsefaqtd" target='_blank'>github</a></td>
-    <td align="center"><a href="" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/zznnan0512" target='_blank'>github</a></td>
   </tr>
 </table>
 
