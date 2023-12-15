@@ -115,7 +115,8 @@
 
 
 ## ER다이어그램 <br>
-![image](https://github.com/2023-SMHRD-KDT-AI-2/bpsproject/assets/143462444/d1ba5e24-5598-43e3-a3bb-153ae4c78e57)
+![image](https://github.com/Jo-Moon-Gyu/Team_ADVICE_CMS/assets/143462444/a6a254b2-0985-4853-9a23-d4e49c8666f7)
+
 
 ## 화면구성 <br>
 
